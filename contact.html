@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deo Real Estate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="img/house/631367d4e19fbb776f79ab90_Nyumba_Logo-removebg-preview.webp"
+            alt=""
+            width="180px"
+        /></a>
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li class=""><a href="">PROPERTIES</a></li>
+        </ul>
+      </nav>
+      <img
+        src="img/menu (2).png"
+        class="menu"
+        width="25px"
+        onclick="menutoggle()"
+      />
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="form-container">
+      <div class="row">
+        <div class="col-2">
+          <div class="story-text">
+            <h1>Get In <strong>Touch</strong></h1>
+            <p>
+              Got a question about one of our listings, want to sell your house
+              or just a question? <br />
+              Contact us and we'll get back to you as soon as possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-2">
+            <div class="form-con">
+                <form action="" class="con">
+                    <label for="Name" class="form-l">Name</label><input type="text" placeholder="Enter Your Name">
+
+                    <label for="Email" class="form-l">Email address</label><input type="email" placeholder="Email address">
+
+                    <label for="Phone Number" class="form-l">Phone Number</label><input type="text" inputmode="numeric" placeholder="Phone Number">
+
+                    <label for="textarea" class="form-l">Message</label><textarea name="" id="" cols="30" rows="5" placeholder="How Can We Help You"></textarea>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var menuitems = document.getElementById("menuitems")
+
+    menuitems.style.maxHeight = "0px"
+
+    function menutoggle() {
+      if (menuitems.style.maxHeight == "0px") {
+        menuitems.style.maxHeight = "200px"
+      } else {
+        menuitems.style.maxHeight = "0px"
+      }
+    }
+
+    //Get the button:
+    mybutton = document.getElementById("myBtn")
+
+    window.onscroll = function () {
+      scrollFunction()
+    }
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block"
+      } else {
+        mybutton.style.display = "none"
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    }
+  </script>
+</html>
