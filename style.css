@@ -27,8 +27,9 @@ body{
   background-color:var(--background);
   padding: 20px;
   top: 0;
-  position: fixed;
-  inset: 0% 0% auto;
+  position: sticky;
+  /* position: fixed;
+  inset: 0% 0% auto; */
   z-index: 1000;
   width: 100%;
   
@@ -210,14 +211,14 @@ font-size: 3em;
 font-weight:normal;
 font-family: var(--roboto);
 color: var(--text);
-line-height: 75px;
+line-height: 85px;
 }
 
 
 /* Number text (1/3 etc) */
 .numbertext {
   color:var(--background);
-  font-size: 12px;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -424,9 +425,10 @@ line-height: 75px;
 /*  */
 
 .sale{
-  opacity: 1;
   transition: all 350ms;
 }
+
+
 .top-left {
   position: absolute;
   top: 0px;
@@ -459,7 +461,7 @@ line-height: 75px;
 
 
   .con-img img{
-     width: 100%;
+    width: 100%;
     height: 100%;
     max-height: none;
     max-width: 100%;
@@ -962,14 +964,14 @@ gap: 2rem;
 }
 
 .text-blog-con{
-  padding: 0px 80px;
+  padding: 0px 70px;
   color: var(--text-header);
   margin-inline: auto;
 }
 
 .text-blog-con h1{
   font-weight: normal;
-  margin-top: 200px;
+  margin-top: 60px;
   margin-bottom: 10px;
   font-size: 4em;
   text-align: center;
@@ -1139,7 +1141,6 @@ gap: 2rem;
 
 .properties-hero{
     height: 80vh;
-    margin-top: 70px;
     padding: 20px;
      background-image: url(/img/house/sec.jpg);
     background-position: center center;
@@ -1147,9 +1148,9 @@ gap: 2rem;
     object-fit: cover;
 }
 
+
 .properties-hero-2{
     height: 80vh;
-    margin-top: 70px;
     padding: 20px;
      background-image: url(/img/house/thir.webp);
     background-position: center center;
@@ -1159,7 +1160,6 @@ gap: 2rem;
 
 .properties-hero-3{
     height: 80vh;
-    margin-top: 70px;
     padding: 20px;
      background-image: url(/img/house/john-fornander-tVzyDSV84w8-unsplash.jpg);
     background-position: center center;
@@ -1169,7 +1169,6 @@ gap: 2rem;
 
 .properties-hero-4{
     height: 80vh;
-    margin-top: 70px;
     padding: 20px;
      background-image: url(/img/house/fourth.jpg);
     background-position: center center;
@@ -1179,7 +1178,6 @@ gap: 2rem;
 
 .properties-hero-5{
     height: 80vh;
-    margin-top: 70px;
     padding: 20px;
      background-image: url(/img/house/Fifth-unsplash.jpg);
     background-position: center center;
@@ -1189,7 +1187,6 @@ gap: 2rem;
 
 .properties-hero-6{
     height: 80vh;
-    margin-top: 70px;
     padding: 20px;
      background-image: url(/img/house/Sixth-unsplash.jpg);
     background-position: center center;
