@@ -31,8 +31,6 @@ body {
   padding: 20px;
   top: 0;
   position: sticky;
-  /* position: fixed;
-  inset: 0% 0% auto; */
   z-index: 1000;
   width: 100%;
 
@@ -776,7 +774,7 @@ nav ul li a:hover::after {
 }
 
 .join-con form input:focus {
-  background-color: #085b9b;
+  background-color:aqua;
 }
 
 ::placeholder {
@@ -788,7 +786,7 @@ nav ul li a:hover::after {
   border: 1px solid var(--text);
   outline: none;
   color: var(--text-header);
-  background-color: rgb(170, 253, 253);
+  background-color: aqua;
   transition: all 450ms;
 }
 
@@ -814,7 +812,7 @@ nav ul li a:hover::after {
 
 .footer p {
   color: #8a8a8a;
-  line-height: 25px;
+  line-height: 24px;
 }
 
 .footer h3 {
@@ -826,12 +824,12 @@ nav ul li a:hover::after {
 .footer-col-2,
 .footer-col-3,
 .footer-col-4 {
-  min-width: 250px;
+  min-width: 200px;
   margin-bottom: 20px;
 }
 
 .footer-col-1 {
-  flex-basis: 30%;
+  flex-basis: 25%;
 }
 
 .footer-col-2 {
@@ -840,20 +838,19 @@ nav ul li a:hover::after {
 }
 
 .footer-col-2 img {
-  width: 180px;
+  width: 190px;
   margin-bottom: 20px;
 }
 
 .footer-col-3,
 .footer-col-4 {
-  flex-basis: 12%;
+  flex-basis: 10%;
   text-align: center;
 }
 
 .footer hr {
   border: none;
   background-color: #b5b5b5;
-  height: 1px;
   margin: 20px 0;
   height: 1px;
 }
@@ -866,9 +863,6 @@ ul {
   margin-top: 20px;
 }
 
-.logo-app img {
-  width: 140px;
-}
 
 .copyright {
   text-align: center;
